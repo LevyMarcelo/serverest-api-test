@@ -17,9 +17,9 @@ O projeto tem como objetivos:
 
 ## 2. API e contrato
 
-**Aplicação:** ServeRest
-**Documentação:** https://serverest.dev/#/
-**Contrato:** Swagger / OpenAPI
+**Aplicação:** ServeRest  
+**Documentação:** https://serverest.dev/#/  
+**Contrato:** Swagger / OpenAPI  
 **URL base:** `https://serverest.dev`
 
 As operações automatizadas são:
@@ -68,7 +68,7 @@ Os testes utilizam dados preparados por meio de métodos auxiliares e fábricas 
 
 O projeto contempla os cinco endpoints de gerenciamento de usuários.
 
-### POST `/usuarios` — Cadastro de usuários
+### POST `/usuarios` - Cadastro de usuários
 
 | ID | Cenário | Classificação |
 |---|---|---|
@@ -87,7 +87,7 @@ O projeto contempla os cinco endpoints de gerenciamento de usuários.
 | CT-013 | Falha ao cadastrar usuário com tipos de dados incorretos | Negativo |
 | CT-014 | Falha ao cadastrar usuário com propriedades adicionais no payload | Negativo |
 
-### GET `/usuarios` — Consulta de usuários
+### GET `/usuarios` - Consulta de usuários
 
 | ID | Cenário | Classificação |
 |---|---|---|
@@ -103,7 +103,7 @@ O projeto contempla os cinco endpoints de gerenciamento de usuários.
 | CT-024 | Consultar usuários sem registros correspondentes aos filtros informados | Positivo |
 | CT-025 | Falha ao consultar usuários com e-mail em formato inválido no filtro | Negativo |
 
-### GET `/usuarios/{_id}` — Consulta de usuário por ID
+### GET `/usuarios/{_id}` - Consulta de usuário por ID
 
 | ID | Cenário | Classificação |
 |---|---|---|
@@ -112,7 +112,7 @@ O projeto contempla os cinco endpoints de gerenciamento de usuários.
 | CT-028 | Falha ao consultar usuário com ID inválido | Negativo |
 | CT-029 | Falha ao consultar usuário inexistente | Negativo |
 
-### PUT `/usuarios/{_id}` — Atualização ou cadastro de usuário
+### PUT `/usuarios/{_id}` - Atualização ou cadastro de usuário
 
 | ID | Cenário | Classificação |
 |---|---|---|
@@ -122,7 +122,7 @@ O projeto contempla os cinco endpoints de gerenciamento de usuários.
 | CT-033 | Rejeitar atualização com e-mail já utilizado e preservar o registro | Negativo |
 | CT-034 | Rejeitar atualização com tipos de dados incorretos e preservar o registro | Negativo |
 
-### DELETE `/usuarios/{_id}` — Exclusão de usuário
+### DELETE `/usuarios/{_id}` - Exclusão de usuário
 
 | ID | Cenário | Classificação |
 |---|---|---|
@@ -292,23 +292,23 @@ Na última execução completa da suíte, foram obtidos os seguintes resultados:
 
 ### Evidências da execução
 
-**Execução dos testes — IntelliJ IDEA**
+**Execução dos testes - IntelliJ IDEA**
 
-**Evidência 1 — Resultado da execução dos testes**
+**Evidência 1 - Resultado da execução dos testes**
 
 ![Resultado da execução no IntelliJ IDEA](docs/evidencias/intellij-execucao-1.png)
 
-**Evidência 2 — Detalhes da execução dos testes**
+**Evidência 2 - Detalhes da execução dos testes**
 
 ![Detalhes da execução no IntelliJ IDEA](docs/evidencias/intellij-execucao-2.png)
 
-**Relatório — Allure Report**
+**Relatório - Allure Report**
 
-**Evidência 3 — Visão geral do relatório Allure**
+**Evidência 3 - Visão geral do relatório Allure**
 
 ![Relatório Allure](docs/evidencias/allure-report.png)
 
-## 11. Integração contínua — GitHub Actions
+## 11. Integração contínua - GitHub Actions
 
 O projeto utiliza GitHub Actions para automatizar a execução dos testes.
 
