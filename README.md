@@ -267,6 +267,20 @@ mvn allure:serve
 
 O comando gera e disponibiliza o relatório Allure localmente no navegador.
 
+### Visualizar relatório baixado do GitHub Actions
+
+Após baixar e extrair o artefato `api-test-results`, entre na pasta `site/allure-maven-plugin/`.
+
+Para visualizar o relatório, inicie um servidor HTTP local:
+
+```bash
+npx http-server -p 8000
+```
+
+Em seguida, acesse `http://localhost:8000` pelo navegador.
+
+**Observação:** não abra o arquivo `index.html` diretamente pelo caminho local (`file://`), pois os recursos do relatório podem não carregar corretamente.
+
 ## 10. Resultados e evidências
 
 Na última execução completa da suíte, foram obtidos os seguintes resultados:
